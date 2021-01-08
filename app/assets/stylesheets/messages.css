@@ -10,14 +10,45 @@
 .side-header {
   height: 100px;
   padding:0 20px;
+  background-color: #253141;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
 }
+
+.side-name a{
+  text-decoration: none;
+  font-size:16px;
+  color:#FAFAFA;
+}
+
+.side-newroom a{
+  font-size: 10px;
+  color:deepskyblue;
+  border:1px solid lightblue;
+  padding:14px;
+  text-decoration: none;
+}
+
+
+
+
 .side-rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding:0 20px;
+  overflow: scroll;
+}
+.side-list{
+  padding: 20px 0 40px;
 }
 
+.side-roomlist a{
+  color:white;
+  text-decoration:none;
+}
 
+/* ↓ここからメイン部分↓ */
 
 .chat {
   background-color: #FFFFFF;
