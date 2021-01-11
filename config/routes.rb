@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   #ユーザー編集に必要なルーティングを追記する。
   #その後コマンドでcontrollerを作成する
   resources :rooms, only: [:new, :create]
+  resources :rooms,only: [:new, :create, :destroy] do
+    resources :messages, only: [:index, :create]
+  end
+
 end
