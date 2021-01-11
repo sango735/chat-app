@@ -6,4 +6,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   #nameカラムにプレセンスを設ける事で空の場合はDBに保存しないという条件を設定
+
+  has_many :room_users
+  has_many :rooms, through: :room_users
 end

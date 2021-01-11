@@ -6,5 +6,4 @@ Rails.application.routes.draw do
   #ユーザー編集に必要なルーティングを追記する。
   #その後コマンドでcontrollerを作成する
   resources :rooms, only: [:new, :create]
-  #新規チャットルームの作成で動くアクションを記述する
 end
